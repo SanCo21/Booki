@@ -43,13 +43,14 @@ button {
     border:white;
     margin: 0px 0px 0px 40px;
     padding-top: 10px; 
+    border-top-style: solid;
+    border-top-width: medium
 }
     
 .buttonHighlight:hover {
     color: #0065FC;
     border-top-color: #0065FC;
-    border-top-style: solid;
-    border-top-width: medium;
+    ;
     
     
 }
