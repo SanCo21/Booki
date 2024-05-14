@@ -35,10 +35,10 @@ header img {
 nav {
     display: flex;
     flex-direction: row;
-   
 }
 
 button {
+    font-size: 16px;
     background-color: white;
     border:white;
     margin: 0px 0px 0px 40px;
@@ -50,9 +50,6 @@ button {
 .buttonHighlight:hover {
     color: #0065FC;
     border-top-color: #0065FC;
-    ;
-    
-    
 }
 
 .main-container {
@@ -62,9 +59,74 @@ button {
     box-sizing: border-box;
 }
 
+p {
+    font-size: 16px;
+}
+
 a {
     color: inherit;
     text-decoration: none;
+}
+
+/* SEARCH BAR (icône + formulaire + bouton rechercher*/
+
+.search-bar {
+    background-color: var(--main-bg-color);
+    border-radius: 15px;
+    width: 400px;
+    height: 50px;
+    /* border-top-color: red;
+    border-bottom-color: red; */
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: space-around; */
+    
+    margin: 0px 0px 30px 0px;
+    /* border-color: var(--main-bg-color); */
+    /* padding: 16px 15px;   
+    /* color: black ;
+    font-size: 18px;
+    font-weight: bold;      */
+}
+
+.fa-location-dot {
+    color: black;
+    font-size: 18px;    
+    background-color: var(--main-bg-color);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+input {
+    color: black ;
+    font-size: 18px;
+    font-weight: bold;
+    height: 50px;
+    border-top: 1px solid #D9D9D9;
+    border-bottom: 1px solid #D9D9D9;
+    border-left: none;
+    border-right: none;
+    /* border: none;  */
+    /* padding: 18px; */
+}
+
+.buttonSearch {   
+    color: white;
+    font-size: 18px;
+    font-weight:bold;
+    /* display: flex;
+    justify-content: center; */
+    background-color: #0065FC;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;   
+    padding: 15px 15px;
 }
 
 .section-title {
