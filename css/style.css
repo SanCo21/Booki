@@ -68,7 +68,7 @@ a {
     text-decoration: none;
 }
 
-/* SEARCH BAR (icône + formulaire + bouton rechercher*/
+/*********** SEARCH BAR (icône + formulaire + bouton rechercher ***********/
 
 .search-bar {
     background-color: var(--main-bg-color);
@@ -132,6 +132,33 @@ input {
     height: 50px;
     width: 130px;
     /* padding: 5px 15px 0px 15px; */
+}
+
+/*********** PARTIE FILTRE ***********/
+.filters {
+    font-weight: bold;
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 700px;
+    height: 50px;
+}
+
+.filter-button {
+    font-size: 17px;
+    height: 40px;
+    width: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px 0 15px;    
+    border: 2px solid #F2F2F2;
+    border-radius: 25px;    
+}
+.filter-icons {
+    padding-right: 10px;
 }
 
 .section-title {
