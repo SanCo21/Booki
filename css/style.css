@@ -37,7 +37,7 @@ nav {
     /* flex-wrap: wrap; */
 }
 
-button {
+.nav-button {
     font-size: 16px;
     background-color: white;
     border:white;
@@ -182,6 +182,7 @@ input {
     margin: 10px;
     border-radius: 30px;
 }
+/* -------------------------------------- */
 
 .section-title {
     margin: 0;
@@ -274,6 +275,15 @@ input {
     margin-bottom: 5px;
 }
 
+.activites {
+    width: 100%;
+    
+    box-sizing: border-box;
+    background-color: white;
+    padding: 30px;
+    
+}
+   
 
 
 
