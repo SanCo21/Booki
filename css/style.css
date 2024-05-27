@@ -148,26 +148,37 @@ input {
 }
 
 /*********** PARTIE FILTRE ***********/
-.filters {
-    font-weight: bold;
-    font-size: 18px;
-    display: flex;
-    flex-direction: row;
+.filters-section {
+    width: 758px;
+    height: 50px;
+    display: flex;    
     justify-content: space-between;
     align-items: center;
-    /* flex-wrap: wrap; */
-    width: 700px;
-    height: 50px;
+}
+    
+
+.filters {    
+    width: 90%;
+    display: flex;
+    justify-content: space-between;   
 }
 
-.filter-button {
+.filters h3 {
+    font-size: 18px;
+}
+
+.filters a {
     font-size: 17px;
-    height: 40px;
+    font-weight: bold;    
+}
+    
+
+.filter-button {    
+    height: 50px;
     width: fit-content;
-    display: flex;
-    justify-content: space-between;
+    display: flex;    
     align-items: center;    
-    padding: 0 15px 0 15px;    
+    padding: 0 19px 0 19px;    
     border: 2px solid #F2F2F2;
     border-radius: 25px;    
 }
@@ -175,7 +186,7 @@ input {
     padding-right: 10px;
 }
 
-.filter-buttonLight:hover {
+.filter-button:hover {
     background-color: #DEEBFF;
 }
 
@@ -439,6 +450,23 @@ footer {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+
+    .filters-section  {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 35px;
+    }
+
+    .filter-button {
+        font-size: 16px;
+        display: flex;        
+    }
+
+    .infobar {
+        padding-top: 35px;
+    }
+
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -463,12 +491,26 @@ footer {
     }
 
     .populaires-cards .card-title {
-        font-size: 14px;
+        /* font-size: 14px; */ 
+        /* titres maquettes à 16px et non 14px */
+        font-size: 16px;
     }
 
     .populaires-cards .card-subtitle {
-        font-size: 13px;
+        /* font-size: 13px; */
+        /* titres maquettes à 14px et non 13px */
+        font-size: 14px;
     }
+    
+    .activites-cards .card {        
+        height: 270px;
+        width: auto;        
+    }
+
+    .activites-cards img {        
+        height: 75%;          
+    }
+
 }
 
 /* Small devices (phones, less than 768px) */
