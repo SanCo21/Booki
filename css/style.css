@@ -403,17 +403,14 @@ padding-bottom: 0px;
     height: 380px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    object-fit: cover ;
-    
+    object-fit: cover ;    
 }
 
 .activites-cards .card-content {    
     padding-left: 15px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    
-    
+    justify-content: space-between;    
 }
 
 .activites-cards .card-title {
