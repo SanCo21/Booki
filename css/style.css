@@ -85,82 +85,118 @@ nav {
 
 /*********** SEARCH BAR (icone + formulaire + bouton rechercher ***********/
 
-.search-bar {
-    background-color: var(--main-bg-color);
-    border-radius: 15px;
-    width: 200px;
-    height: 50px;
-    /* border-top-color: red;
-    border-bottom-color: red; */
+.search-bar-group {
+    /* background-color: var(--main-bg-color); */
+    /* border-radius: 15px; */
+    max-width: 377px;
+    height: 50px;    
     
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* align-items: center; */
     /* justify-content: space-around; */
-    
+    /* background-color: blueviolet; */
     margin: 35px 0px 35px 0px;
     
+    
 }
+
+
 
 .fa-location-dot {
     color: black;
-    font-size: 18px;    
+    font-size: 18px;
     background-color: var(--main-bg-color);
-    width: 50px;
-    height: 50px;
+    /* width: 50px; */
+    height: 49px;
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 1px solid #F2F2F2;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
-    padding: 0 20px 0 20px;
+    padding-left: 17px;
+    padding-right: 17px;
+    
 }
 
 input {
+    
     color: black ;
     font-size: 18px;
     font-weight: bold;
-    height: 50px;
+    height: 49px;
+    /* width: 200px; */
     border-top: 1px solid #F2F2F2;
     border-bottom: 1px solid #F2F2F2;
     border-left: none;
     border-right: none;
     outline: none;
     /* text-align: center; */
-    /* display: flex;
-    justify-content: center; */
-    padding: 10px 20px 10px 20px;
+    display: flex;
+    /* flex-direction: row; */
+    /* justify-content: center; */
+    padding: 0px 24px 0px 24px;
     /* border: none;  */
+}
+
+.search-bar-button {
+    /* color: white; */
+    /* background-color: #0065FC; */
+    /* border: 1px solid #0065FC; */
+    height: 49px;
+    display: flex;
+    /* width: 377px; */
+    /* border: 1px solid #0065FC; */
+    /* justify-content: center; */
     
 }
 
-.buttonSearch {   
+.search-bar-button-text {  
     color: white;
     font-size: 18px;
-    font-weight:bold;
+    /* font-weight:bold; */
     display: flex;
-    /* justify-content: center; */
+    justify-content: center;
     align-items: center;
     background-color: #0065FC;
-    border: 1px solid #0065FC;
+    border: 2px solid #0065FC;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     height: 50px;
-    width: 130px;
-    padding: 5px 15px 5px 15px;
+    /* width: 132px; */
+    /* padding: 14px 15px 15px 15px; */
+    /* visibility: collapse; */
 }
 
 .fa-magnifying-glass {
-    visibility: collapse;
+    color: white;
     background-color: #0065FC;
     border: 1px solid #0065FC;
     border-radius: 15px;
-    height: 49px;
-    width: 49px;
-    color: white;
-    font-size: 17px;
     display: flex;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
+    height: 49px;
+    width: 49px;    
+    visibility: hidden;
+    
+}
+
+.search-bar-button a {
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    /* visibility: collapse; */
+    /* background-color: #0065FC; */
+    /* border: 1px solid #0065FC; */
+    /* border-radius: 15px; */
+    /* height: 49px; */
+    /* width: 49px;     */
+    /* font-size: 17px; */
+    /* color: white; */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
 }
 
 /*********** PARTIE FILTRE ***********/
@@ -476,7 +512,8 @@ footer {
 
     .filter-button {
         font-size: 16px;
-        display: flex;        
+        display: flex;
+
     }
 
     .fa-magnifying-glass {
@@ -543,7 +580,7 @@ footer {
         flex-direction: column;        
         align-items: center;
         height: 115px;        
-        /* padding-left: 0px;        */
+        
     }
 
     header img {
@@ -572,18 +609,27 @@ footer {
     }
 
     .section-title {
-        /* margin: 20px; */
-        padding-left: 20px;
+        margin: 20px;        
     } 
 
-    /* LOUPE */
-    .buttonSearch {
+    /****** LOUPE ******/
+
+    .search-bar-group {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .search-bar-button-text {
         visibility: collapse;
     }
-    
+
+    .search-bar-button-icon {
+        visibility: visible;
+    }
+
     .fa-magnifying-glass {
         visibility: visible;
-    }    
+    }     
 
 
     .filters-section{
@@ -596,8 +642,9 @@ footer {
         margin-right: 20px;
         margin-bottom: 0px;
     }
+
     .filters {    
-        width: 100%;
+        width: 95%;
         flex-wrap: wrap;      
     }
 
@@ -608,7 +655,9 @@ footer {
     .filter-button {  
         height: 50px;
         width: 37%; 
-        margin-bottom: 20px;                     
+        margin-bottom: 20px;
+        margin-left: 0;
+                        
     }
 
     .infobar {
