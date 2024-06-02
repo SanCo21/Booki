@@ -19,11 +19,10 @@ body {
     margin: 0px;
 }
 
-
-
 .main-container {
     width: 100%;
     max-width: 1440px;
+    min-width: 320px;
     padding: 0 50px;
     box-sizing: border-box;   
 }
@@ -229,7 +228,7 @@ input {
 /* -------------------------------------- */
 
 .section-title {
-    margin: 0; 
+    margin: 0;
     font-size: 22px;
 }
 
@@ -597,7 +596,8 @@ footer {
     }
 
     .section-title h1, p {
-        margin-left: 20px;        
+        margin-left: 20px;
+        margin-right: 20px;       
     } 
 
     /****** LOUPE ******/
